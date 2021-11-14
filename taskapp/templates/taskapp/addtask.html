@@ -1,0 +1,10 @@
+{%  extends "taskapp/layout.html" %}
+{% block body %}
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="New Task" name="task">
+    <input type="submit" value="add">
+
+</form>
+    <a href="{% url 'view-task' %}"> view task</a>
+{% endblock %}
