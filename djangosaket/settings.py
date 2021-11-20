@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'firstapp',
     'newyear',
     'taskapp',
+    'airline',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
