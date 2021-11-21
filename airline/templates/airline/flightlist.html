@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flight list</title>
+</head>
+<body>
+    <ul>
+           {% for flight in flightlist %}
+               <li>{{ flight.source }} to {{ flight.destination }} in {{ flight.durations }} mintues</li>
+            {% endfor %}
+    </ul>
+
+</body>
+</html>
