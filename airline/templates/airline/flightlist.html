@@ -5,9 +5,12 @@
     <title>flight list</title>
 </head>
 <body>
+    <h1>all flights </h1>
     <ul>
            {% for flight in flightlist %}
-               <li>{{ flight.source }} to {{ flight.destination }} in {{ flight.durations }} mintues</li>
+{#               <li>{{ flight.source }} to {{ flight.destination }} in {{ flight.durations }} mintues</li>#}
+               <li><a href="{% url 'flight-detail' flight.id %}">{{ flight }}</a>
+                   </li>
             {% endfor %}
     </ul>
 

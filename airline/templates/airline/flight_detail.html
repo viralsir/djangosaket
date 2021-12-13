@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Details page</title>
+</head>
+<body>
+        <h1>Flight Information </h1>
+        <ul>
+            <li>Source City : {{ flightinfo.source.city }} , Source Code :{{ flightinfo.source.code }}</li>
+            <li>Destion City :{{ flightinfo.destination.city }} , Destination Code :{{ flightinfo.destination.code }}</li>
+            <li>Durations : {{ flightinfo.durations }} mintues</li>
+        </ul>
+         <hr/>
+        <a href="{% url 'flight-view' %}"> Home</a>
+</body>
+</html>
